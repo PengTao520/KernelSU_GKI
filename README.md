@@ -2,10 +2,8 @@
 
 > 非GKI可以尝试[SukiSU云盘](https://alist.shirkneko.top)的资源，不支持一加ColorOS14、15
 >
-> 第一次使用务必**详细阅读**以下内容，不要因为懒惰而占用他人时间！
->
-> 因SUKISU和NEXT已不在维护旧版本susfs的分支，编译时你无论选择Dev或Stable，都是一样的结果；
->且mksu也无标准/开发版本概念，无论选择哪个都一样，但（KSU的稳定版是最新TAG，也就是[v1.0.5](https://github.com/tiann/KernelSU/tree/v1.0.5)，4月22日发布的那个）
+> 因SUKISU和NEXT已不在维护旧版本susfs的分支，编译时你无论选择Dev或Stable，都是一样的结果；> 由于SUKISU和NEXT已不再维护旧版本susfs的分支，因此编译时无论选择Dev还是Stable，结果都是一样的；
+>且mksu也无标准/开发版本概念，无论选择哪个都一样，但（KSU的稳定版是最新TAG，也就是[v1.0.5](https://github.com/tiann/KernelSU/tree/v1.0.5)，4月22日发布的那个）>且mksu也没有标准版/开发版的概念，无论选择哪个都一样，但（KSU的稳定版是最新TAG，也就是[v1.0.5](https://github.com/tiann/KernelSU/tree/v1.0.5)，4月22日发布的那个）
 > 
 > 最近更新：
 > 1. 6.6 开启KPM
@@ -14,13 +12,13 @@
 
 ### 无限重启？
 1. 一加：colorOS15魔改过f2fs，已经不兼容GKI的f2fs，除非进入rec清除Data重启
-2. 小米：一些机型因为启动引导因avb验证导致无法启动分区，如红米k50，需要关闭avb验证（https://magiskcn.com/disable-avb）
+2. 小米：一些机型因为启动引导因avb验证导致无法启动分区，如红米k50，需要关闭avb验证（https://magiskcn.com/disable-avb）2. 小米：部分机型由于启动引导时因avb验证导致无法启动分区，例如红米K50，需要关闭avb验证（https://magiskcn.com/disable-avb）
 3. 其他：其他手机也可能因为相似的兼容问题，如果有可以补充。。。
 
-### Tips
+### Tips### 提示
 1. 关于安全补丁
     - 手机设置里的安全补丁时间与GKI内核的安全补丁时间**无关**，请无视它
-2. 关于android版本
+2. 关于android版本2. 关于Android版本
     - 手机系统的安卓版本与GKI内核的安卓版本无关，应当对照手机内核版本的 **android**
     - 假设手机设置的内核版本为 5.10.66-**android12**-9-00001-g41ff3fa8fop9-ab8161528
     - 那么你需要刷入[在此](https://github.com/zzh20188/GKI_KernelSU_SUSFS/releases)下载的 **android12**-5.10.66-2022-01-AnyKernel3.zip 文件
@@ -30,7 +28,7 @@
 1. 关于Anykernel3.zip，下载即用！
    - 然后使用刷入软件，例如[HorizonKernelFlasher](https://github.com/libxzr/HorizonKernelFlasher/releases)进行刷写内核
 2. 关于boot.img，下载与你内核格式相匹配的（无压缩、gz、lz4），[参考](https://kernelsu.org/zh_CN/guide/installation.html#install-by-kernelsu-boot-image) **找到合适的 boot.img** 一节
-    - 使用[FASTBOOT](https://magiskcn.com/)刷入，或者使用刷写软件刷写到ROOT所在插槽的boot分区(例如爱玩机、Kernelflasher)
+    - 使用[FASTBOOT](https://magiskcn.com/)刷入，或者使用刷写软件刷写到ROOT所在插槽的boot分区(例如爱玩机、Kernelflasher)- 使用[FASTBOOT](https://magiskcn.com/)刷入，或者使用刷机软件刷写到ROOT所在插槽的boot分区（例如爱玩机、Kernelflasher）
 
 
 
